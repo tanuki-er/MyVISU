@@ -4,37 +4,122 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-body {
+html{
     height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+}
+
+body{
+    background-image:url(../Resources/snow.jpg);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+    flex: auto;
+    
+}
+
+main{
+    /*position: absolute;*/
+    width: 1;
+    height: 944px;
+    left: calc(50% - 1039px/2 - 0.5px);
+    top: calc(50% - 944px/2 + 40px);
+    background: rgba(68, 95, 124, 0.9);
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.left-column{
     box-sizing: border-box;
+    left: 0px;
+    top: 0px;
+
+    border: 1px solid #000000;
 }
 
-footer {
-    text-align: center;
-    color: black;
+.text-field h2{
+    
+    justify-content: space-between;
 }
 
-nav {
-    color: white;
+
+.Chat-folder{
+    width: 372.78px; 
+    height: 60px;
 }
 
-#main{
-    width: 100%;
-    overflow: auto;
-    height: 100%;
+.chat-field{
+    width: 372.78px; 
+    height: 60px;
 }
 
-#LeftColumn{
+.photo-frame{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+.user-info{
+    width: 310px;
+    height: 60px;
+    float: right;
+}
+
+
+/*
+.left-column{
+    position: absolute;
     float: left;
     width: 20%;
     background-color: #7583F0;
-    height: 812px;
+    height: 1024px;
+    display: flex;
     flex-direction: column;
     
 }
+
+.left-column header{
+
+    
+}
+
+.left-column content{
+
+}
+
+.left-column new-chat-button{
+
+}
+
+
+.right-column{
+    position: relative;
+    float: right;
+    width: 80%;
+    background-color: #D8FFFD;
+    height: 1024px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-column header{
+
+}
+
+.right-column content{
+
+}
+
+.right-column message-form{
+
+}
+
+
 
 .LeftContent{
     flex-direction: column;
@@ -61,45 +146,9 @@ nav {
 
 
 
-#Profile-avatar{
-    width: auto;
-    height: auto;
-}
-
-#MiddleColumn{
-    
-    float: right;
-    width: 80%;
-    background-color: #D8FFFD;
-    height: 812px;
-    display: flex;
-    flex-direction: column;
-}
-
-
 .LeftMainHeader {
     max-width: auto;
     margin: auto;
     text-align: center;
 }
-
-
-button {
-    width: auto;
-    border: none;
-    outline: 0;
-    display: inline-block;
-    color: white;
-    background-color: blue;
-    text-align: center;
-    cursor: pointer;
-    
-    font-size: 18px;
- }
-  
-a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-  }
-  
+  */
