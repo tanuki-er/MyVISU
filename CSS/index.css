@@ -1,0 +1,70 @@
+.content > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 50px);
+}
+
+.description {
+    width: 50%;
+    text-align: center;
+    margin-top: 300px;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.join-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    margin: 75px 0;
+    color: white;
+    background-color: darkorange;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: darkorange;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.join-button:hover {
+    color: darkorange;
+    background-color: transparent;
+    transition: 0.25s ease;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.platform-header {
+    margin-top: 300px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.logo-container {
+    margin: 75px;
+}
+
+.messenger-logo {
+    height: 100px;
+    margin: 50px 50px 100px 50px
+}
+
+@media screen and (max-width: 800px) {
+    .messenger-logo {
+        height: 65px;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .description {
+        width: 75%;
+        font-size: 40px;
+    }
+}
