@@ -9,6 +9,7 @@
     <link href="/CSS/header.css" rel="stylesheet" type="text/css">
     <link href="/CSS/footer.css" rel="stylesheet" type="text/css">
     <link href="/CSS/index.css" rel="stylesheet" type="text/css">
+    <link href="/CSS/chat-choosed.css" rel="stylesheet" type="text/css">
     <script src="/js/getLoadTime.js"></script>
 </head>
 
@@ -20,7 +21,7 @@
 
     <main class="main-class">
         <div class="main-class wrapper-chat-page">
-            <div class="left-column" style="float:left; min-height: 944px; width: 375px; background: rgba(68, 95, 124, 0.9);">
+            <div class="left-column" style="float: left; min-height: 944px; width: 375px; background: rgba(68, 95, 124, 0.9);">
                 <div class="header" style="
                 width: 100%; height: 80px; left: 0px; top: 0px;
                 background: #C2D3FF;">
@@ -100,6 +101,47 @@
             
             </div>
             
+
+            <!--max-size=1423- 946+2 + 373+2 || 1423 - 1323|948 - 375-->
+            <!--max-size=1423-100 -->
+            <!--max-size - 375-->
+            <div class="right-column" style="min-height:944px; width: calc(100vw - 100px - 375px - 2px); background: rgba(68, 95, 124, 0.2);
+            float:right; border: 1px solid #000000;">
+                <div class="chat-header" style=" width: 100%; height: 80px; left: 0px; top: 0px; background: #C2D3FF;"> 
+
+                    <div class="person-info" style="display: flex;float: left; width: 150px;">
+                        
+                        <div class="user-info">
+                            <div class="user-name" style="margin: 15px 20px 5px;width: 150px;float: left; height: 20px;"><strong>Person 1</strong></div>
+                            <div class="last-seen" style="width: 100px; float: left; margin: 5px 20px 15px; height: 20px; text-align: left;
+                            ">12:22</div>
+                
+                        </div>
+                
+                    </div>
+                    <div class="button-field" style="width: 80px; height: 80px; left: 0px; top: 0px; float: right;"> 
+                        <img class="new-chat-logo" style="margin: 24px; display: flex;" src="/assets/others-button.svg" alt="logo">
+                    </div>
+                </div>
+
+                <div class="chat-body" style="width: 100%; height: 784px;">
+                    <div class="message-field" style="display: flex;"></div>
+                </div>
+
+                <div class="chat-input" style="height: 80px;">
+                    <div class="button-field" style="width: 80px; height: 80px; left: 0px; top: 0px; float: left; margin-right: auto;"> 
+                        <img class="new-chat-logo" style="margin: 24px; display: flex;" src="/assets/Add-files-button.svg" alt="logo">
+                    </div>
+
+                    <div class="input-field"> 
+                        <input class="input-field__input" type="text" name="message" id="message" placeholder="message" value="itchief">
+                    </div>
+
+                    <div class="button-field" style="width: 80px; height: 80px; left: 0px; top: 0px; float: right; margin-left: auto;">
+                        <img class="new-chat-logo" style="margin: 24px; display: flex;" src="/assets/Send-message-button.svg" alt="logo">
+                    </div>
+
+                </div>
 
         </div>
 

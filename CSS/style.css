@@ -1,7 +1,56 @@
-*{
+*, *::before, *::after{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+
+input[type="text"] {
+    font-family: inherit; /* 1 */
+    font-size: inherit; /* 1 */
+    line-height: inherit; /* 1 */
+    margin: 0; /* 2 */
+    display: block;
+}
+  /* стили для input */
+.input-field__input {
+    display: flex;
+    float: left;
+    width: calc(100vw - 100px - 375px - 2px - 160px - 5px);
+    height: calc(80px - 2px);
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.5rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.input-field{    
+    margin: 0px 81px;
+    display: flex;
+    flex-direction:unset;
+    float: left;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.input-field__input::placeholder {
+    color: #212529;
+    opacity: 0.4;
+}
+
+.text-field__input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem rgba(158, 158, 158, 0.25);
 }
 
 html{
@@ -50,23 +99,23 @@ main{
 
 .Chat-folder{
     width: 372.78px; 
-    height: 60px;
+    height: 80px;
 }
 
 .chat-field{
-    width: 372.78px; 
-    height: 60px;
+    width: 372.78px;
+    height: 80px;
 }
 
 .photo-frame{
     float: left;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 }
 
 .user-info{
-    width: 310px;
-    height: 60px;
+    width: 290px;
+    height: 80px;
     float: right;
 }
 
